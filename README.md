@@ -21,3 +21,25 @@ Aquí puede ver la documentación para instalar [enzyme-to-json](https://www.npm
 Sería suficiente con ejecutar este comando dentro del directorio del proyecto:
 
 `$ npm install --save-dev enzyme-to-json`
+
+
+## setupTests.js
+
+Configuración en setupTests .js
+
+Verifica hacer las importaciones correspondientes: 
+
+```javascript
+import Enzyme from 'enzyme';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
+import {createSerializer} from 'enzyme-to-json';
+
+Enzyme.configure({ adapter: new Adapter() });
+expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
+```
+
+## Importaciones en test.js
+    import React from 'react';
+    import {shallow} from 'enzyme';
+    import '@testing-library/jest-dom';
+    import { Component } from 'Component';
