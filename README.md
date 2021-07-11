@@ -48,3 +48,11 @@ import {createSerializer} from 'enzyme-to-json';
 Enzyme.configure({ adapter: new Adapter() });
 expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
 ```
+
+## Importaciones en Componente.test.js
+```javascript
+import React  from 'react';
+import '@testing-library/jest-dom'
+import { shallow } from 'enzyme';
+import Component from 'Component';
+```
