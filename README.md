@@ -60,3 +60,4 @@ import Component from 'Component';
 **Notas:**
 
 - **Unit Testing:** Es la manera en que podemos hacer testing por unidad o por componente. Son pruebas unitarias.
+- **Integration Testing:** Es la manera de hacer testing sobre como se integran varios componentes de la aplicación y como se comunican entre ellos. 
