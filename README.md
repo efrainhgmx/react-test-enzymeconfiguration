@@ -56,3 +56,7 @@ import '@testing-library/jest-dom'
 import { shallow } from 'enzyme';
 import Component from 'Component';
 ```
+----------------------------------------------------------
+**Notas:**
+
+- **Unit Testing:** Es la manera en que podemos hacer testing por unidad o por componente. Son pruebas unitarias.
